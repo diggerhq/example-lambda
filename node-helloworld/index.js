@@ -1,4 +1,8 @@
 exports.handler = async (event) => {
     // TODO implement
-    return 'Hello from Lambda';
+    console.log(event)
+      return {
+        statusCode: 200,
+        body: "<h1>Hello from digger!!</h1>"
+      }
 };
